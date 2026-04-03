@@ -74,13 +74,27 @@ function initSignage() {
     // スライド要素の描画
     const slideContainer = document.getElementById("slide-container");
     if (slideContainer) {
+        const totalSlides = signageData.slides.length;
         signageData.slides.forEach((slideData, index) => {
             const slideEl = document.createElement("div");
             slideEl.classList.add("slide");
             slideEl.id = slideData.id;
             
+            // スライドごとに均等に色相(Hue)を割り当てる
+            const hue = Math.floor((index * 360) / totalSlides);
+            const bgColor = `hsl(${hue}, 60%, 92%)`;      // 淡い背景色
+            const primaryColor = `hsl(${hue}, 80%, 35%)`; // 文字・ボーダーのメイン色
+            const secondaryColor = `hsl(${(hue + 45) % 360}, 80%, 45%)`; // アクセントカラー
+
+            // CSS変数として注入
+            slideEl.style.setProperty('--slide-bg', bgColor);
+            slideEl.style.setProperty('--slide-primary', primaryColor);
+            slideEl.style.setProperty('--slide-secondary', secondaryColor);
+            
             if (slideData.backgroundColor) {
                 slideEl.style.backgroundColor = slideData.backgroundColor;
+            } else {
+                slideEl.style.backgroundColor = 'var(--slide-bg)'; // 指定がなければ動的に決定した淡い色
             }
 
             slideData.elements.forEach(item => {

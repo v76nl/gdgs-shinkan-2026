@@ -50,12 +50,23 @@
                 },
                 {
                     "type": "text",
-                    "content": "初心者大歓迎！",
+                    "content": "初心者歓迎ITものづくりサークル",
                     "style": {
                         "top": "45%",
                         "left": "50%",
                         "transform": "translate(-50%, -50%)",
                         "fontSize": "32px",
+                        "color": "#ef6c00"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "#プログラミング #AI #Webアプリ #スマホアプリ",
+                    "style": {
+                        "top": "85%",
+                        "left": "50%",
+                        "transform": "translate(-50%, -50%)",
+                        "fontSize": "16px",
                         "color": "#ef6c00"
                     }
                 },
@@ -146,6 +157,34 @@
                         "fontWeight": "bold",
                         "color": "#e65100",
                         "borderBottom": "4px solid #e65100",
+                        "paddingBottom": "10px"
+                    }
+                },
+                {
+                    "type": "image",
+                    "url": "assets/qr_openchat.png",
+                    "style": {
+                        "top": "35%",
+                        "left": "50%",
+                        "transform": "translateX(-50%)",
+                        "width": "300px"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "slide-5",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "JOIN US (2)!",
+                    "style": {
+                        "top": "20%",
+                        "left": "10%",
+                        "fontSize": "48px",
+                        "fontWeight": "bold",
+                        "color": "var(--slide-primary)",
+                        "borderBottom": "4px solid var(--slide-primary)",
                         "paddingBottom": "10px"
                     }
                 },
