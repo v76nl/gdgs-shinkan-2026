@@ -128,7 +128,7 @@
             "elements": [
                 {
                     "type": "text",
-                    "content": "プロジェクト紹介 - Chuinfo",
+                    "content": "制作物紹介 - Chuinfo",
                     "style": {
                         "top": "20%",
                         "left": "10%",
@@ -157,6 +157,46 @@
                         "top": "20%",
                         "left": "65%",
                         "height": "60%"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "slide-3",
+            "backgroundColor": "var(--slide-bg)",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "制作物紹介 - 公式ホームページ",
+                    "style": {
+                        "top": "20%",
+                        "left": "10%",
+                        "fontSize": "48px",
+                        "fontWeight": "bold",
+                        "color": "var(--slide-primary)",
+                        "borderBottom": "4px solid var(--slide-primary)",
+                        "paddingBottom": "10px"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "",
+                    "style": {
+                        "top": "40%",
+                        "left": "15%",
+                        "fontSize": "32px",
+                        "color": "#333333",
+                        "lineHeight": "2.0"
+                    }
+                },
+                {
+                    "type": "image",
+                    "url": "assets/hp.png",
+                    "style": {
+                        "top": "40%",
+                        "left": "50%",
+                        "height": "55%",
+                        "transform": "translateX(-50%)"
                     }
                 }
             ]
