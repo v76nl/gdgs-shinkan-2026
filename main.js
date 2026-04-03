@@ -1,149 +1,24 @@
-const signageData = {
-    settings: {
-        autoPlayInterval: 5000, // スライド切り替え間隔（ミリ秒）
-        transition: "fade"      // アニメーション種類の設定
-    },
-    // 常時表示する要素
-    globalElements: [
-        {
-            type: "text",
-            content: "GDGoC Chuo",
-            style: {
-                top: "20px",
-                left: "30px",
-                fontSize: "24px",
-                fontWeight: "bold",
-                color: "#333333",
-                backgroundColor: "rgba(255, 255, 255, 0.8)",
-                padding: "5px 15px",
-                borderRadius: "5px"
-            }
-        },
-        {
-            type: "text",
-            content: "代表: 仮名 太郎 (Taro KAMEI)",
-            style: {
-                bottom: "20px",
-                right: "30px",
-                fontSize: "16px",
-                color: "#666666"
-            }
-        }
-    ],
-    // スライドごとの要素
-    slides: [
-        {
-            id: "slide-1",
-            backgroundColor: "#e3f2fd",
-            elements: [
-                {
-                    type: "text",
-                    content: "GDGoC Chuo",
-                    style: {
-                        top: "25%",
-                        left: "50%",
-                        transform: "translate(-50%, -50%)",
-                        fontSize: "64px",
-                        fontWeight: "bold",
-                        color: "#1565c0",
-                        textAlign: "center",
-                        width: "90%"
-                    }
-                },
-                {
-                    type: "text",
-                    content: "初心者大歓迎！",
-                    style: {
-                        top: "45%",
-                        left: "50%",
-                        transform: "translate(-50%, -50%)",
-                        fontSize: "32px",
-                        color: "#ef6c00"
-                    }
-                },
-                {
-                    // 画像要素の追加
-                    type: "image",
-                    url: "assets/sample.png", // assetsフォルダ内の画像パスを指定
-                    style: {
-                        top: "55%",
-                        left: "50%",
-                        transform: "translateX(-50%)",
-                        width: "300px",
-                        height: "200px" // 実際の画像に合わせて調整
-                    }
-                }
-            ]
-        },
-        {
-            id: "slide-2",
-            backgroundColor: "#f1f8e9",
-            elements: [
-                {
-                    type: "text",
-                    content: "活動内容",
-                    style: {
-                        top: "20%",
-                        left: "10%",
-                        fontSize: "48px",
-                        fontWeight: "bold",
-                        color: "#2e7d32",
-                        borderBottom: "4px solid #2e7d32",
-                        paddingBottom: "10px"
-                    }
-                },
-                {
-                    type: "text",
-                    content: "・Webアプリケーション開発<br>・競技プログラミング対策<br>・ハッカソンへの参加",
-                    style: {
-                        top: "40%",
-                        left: "15%",
-                        fontSize: "32px",
-                        color: "#333333",
-                        lineHeight: "2.0"
-                    }
-                }
-            ]
-        },
-        {
-            id: "slide-3",
-            backgroundColor: "#fff3e0",
-            elements: [
-                {
-                    type: "text",
-                    content: "活動日時・場所",
-                    style: {
-                        top: "20%",
-                        left: "10%",
-                        fontSize: "48px",
-                        fontWeight: "bold",
-                        color: "#e65100",
-                        borderBottom: "4px solid #e65100",
-                        paddingBottom: "10px"
-                    }
-                },
-                {
-                    type: "text",
-                    content: "毎週 火・木曜日 17:00〜<br>学生会館 3階 302号室",
-                    style: {
-                        top: "45%",
-                        left: "50%",
-                        transform: "translate(-50%, -50%)",
-                        fontSize: "40px",
-                        color: "#333333",
-                        textAlign: "center",
-                        lineHeight: "1.8"
-                    }
-                }
-            ]
-        }
-    ]
-};
-
 // アプリケーションの状態管理
+let signageData = null;
 let currentSlideIndex = 0;
 let slideTimer = null;
 let isTransitioning = false;
+
+/**
+ * データを読み込む
+ */
+async function loadSignageData() {
+    try {
+        const response = await fetch('signage.json');
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        signageData = await response.json();
+        initSignage();
+    } catch (error) {
+        console.error("データの読み込みに失敗しました:", error);
+    }
+}
 
 /**
  * DOM要素を生成する関数
@@ -180,6 +55,8 @@ function createElementNode(elementData) {
  * 初期化処理
  */
 function initSignage() {
+    if (!signageData) return;
+
     // トランジション設定の反映
     const appEl = document.getElementById("app");
     if (appEl) {
@@ -231,7 +108,7 @@ function initSignage() {
  * @param {number} nextIndex - 表示するスライドのインデックス
  */
 function changeSlide(nextIndex) {
-    if (isTransitioning) return;
+    if (isTransitioning || !signageData) return;
     
     const slides = document.querySelectorAll(".slide");
     if (slides.length <= 1) return;
@@ -281,6 +158,7 @@ function prevSlide() {
  * 自動再生タイマーを開始する
  */
 function startTimer() {
+    if (!signageData) return;
     stopTimer();
     slideTimer = setInterval(nextSlide, signageData.settings.autoPlayInterval);
 }
@@ -313,4 +191,4 @@ function setupKeyboardNavigation() {
 }
 
 // 実行
-document.addEventListener("DOMContentLoaded", initSignage);
+document.addEventListener("DOMContentLoaded", loadSignageData);
