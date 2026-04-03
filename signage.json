@@ -124,7 +124,7 @@
         },
         {
             "id": "slide-3",
-            "backgroundColor": "#f1f8e9",
+            "backgroundColor": "var(--slide-bg)",
             "elements": [
                 {
                     "type": "text",
