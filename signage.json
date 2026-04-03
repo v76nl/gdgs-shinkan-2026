@@ -180,7 +180,7 @@
                 },
                 {
                     "type": "text",
-                    "content": "",
+                    "content": "・制作物紹介<br>・ブログ<bt>",
                     "style": {
                         "top": "40%",
                         "left": "15%",
@@ -193,10 +193,10 @@
                     "type": "image",
                     "url": "assets/hp.png",
                     "style": {
-                        "top": "40%",
-                        "left": "50%",
-                        "height": "55%",
-                        "transform": "translateX(-50%)"
+                        "top": "50%",
+                        "left": "60%",
+                        "width": "30%",
+                        "transform": "translateY(0%)"
                     }
                 }
             ]
@@ -237,7 +237,7 @@
             "elements": [
                 {
                     "type": "text",
-                    "content": "メンバー",
+                    "content": "サークル情報",
                     "style": {
                         "top": "20%",
                         "left": "10%",
@@ -250,7 +250,7 @@
                 },
                 {
                     "type": "text",
-                    "content": "国際情報学部6 : 理工学部2 : 法学部1 <br>男女比 1 : 1<bt>",
+                    "content": "・国際情報学部6割 : 理工学部2割 : 法学部1割<br>・男女比 1 : 1<br>・部費無料<bt>",
                     "style": {
                         "top": "40%",
                         "left": "15%",

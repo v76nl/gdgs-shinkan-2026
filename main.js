@@ -231,11 +231,11 @@ function setupConsoleCommands() {
     });
 
     console.log(
-        "%c✨ 新歓サイネージ コントロールパネル ✨",
+        "%csignage control panel",
         "color: #1565c0; font-size: 16px; font-weight: bold; border-bottom: 2px solid #1565c0; padding-bottom: 5px;"
     );
     console.log(
-        "%cここ（コンソール）に以下の文字を入力して Enter キーを押すと動作モードが切り替わります。\n\n" +
+        "%cconsoleに以下の文字を入力して Enter キーを押すと動作モードが切り替わります。\n\n" +
         "▶ %cauto%c ：自動でスライドが切り替わります\n" +
         "⏸ %cstop%c ：スライドを止めます（左右キーで手動操作できます）",
         "font-size: 14px; line-height: 1.8; margin-top: 5px;",
