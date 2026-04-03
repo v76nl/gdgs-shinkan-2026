@@ -102,11 +102,11 @@
                 },
                 {
                     "type": "text",
-                    "content": "・履修相談会<br>・Webサイト制作<br>・スマホアプリ開発<br>・大会出場<br>・ハッカソン開催<bt>",
+                    "content": "・履修相談会<br>・Webサイト制作<br>・スマホアプリ開発<br>・大会出場<br>・ハッカソン開催<br>・Googleオフィスでのイベントに参加<bt>",
                     "style": {
                         "top": "40%",
                         "left": "15%",
-                        "fontSize": "32px",
+                        "fontSize": "28px",
                         "color": "#333333",
                         "lineHeight": "2.0"
                     }
@@ -162,7 +162,7 @@
             ]
         },
         {
-            "id": "slide-3",
+            "id": "slide-4",
             "backgroundColor": "var(--slide-bg)",
             "elements": [
                 {
@@ -202,7 +202,47 @@
             ]
         },
         {
-            "id": "slide-4",
+            "id": "slide-5",
+            "backgroundColor": "var(--slide-bg)",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "活動紹介 - プログラミング初心者でもできるWebサイト制作",
+                    "style": {
+                        "top": "20%",
+                        "left": "10%",
+                        "fontSize": "32px",
+                        "fontWeight": "bold",
+                        "color": "var(--slide-primary)",
+                        "borderBottom": "4px solid var(--slide-primary)",
+                        "paddingBottom": "10px"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "年度初めに、プログラミング初心者でもできる<br>Webサイト制作のイベントを開催しています！<br>(今年は4月25日に開催予定)",
+                    "style": {
+                        "top": "40%",
+                        "left": "15%",
+                        "fontSize": "32px",
+                        "color": "#333333",
+                        "lineHeight": "2.0"
+                    }
+                },
+                {
+                    "type": "image",
+                    "url": "assets/benkyokai.jpg",
+                    "style": {
+                        "top": "55%",
+                        "left": "70%",
+                        "width": "25%",
+                        "transform": "translateY(0%)"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "slide-6",
             "backgroundColor": "var(--slide-bg)",
             "elements": [
                 {
@@ -232,7 +272,7 @@
             ]
         },
         {
-            "id": "slide-5",
+            "id": "slide-7",
             "backgroundColor": "var(--slide-bg)",
             "elements": [
                 {
@@ -262,7 +302,7 @@
             ]
         },
         {
-            "id": "slide-6",
+            "id": "slide-8",
             "backgroundColor": "var(--slide-bg)",
             "elements": [
                 {
@@ -303,7 +343,7 @@
             ]
         },
         {
-            "id": "slide-7",
+            "id": "slide-9",
             "backgroundColor": "var(--slide-bg)",
             "elements": [
                 {

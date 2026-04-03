@@ -159,7 +159,7 @@ function changeSlide(nextIndex) {
     // CSSのtransition-durationより少し長めに設定する
     setTimeout(() => {
         isTransitioning = false;
-    }, 850); 
+    }, 550); 
 }
 
 /**

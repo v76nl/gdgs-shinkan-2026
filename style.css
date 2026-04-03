@@ -70,14 +70,14 @@ body, html {
     opacity: 0;
     /* 非アクティブ化（フェードアウト）時：
        opacityのアニメーション完了(0.8s)を待ってからvisibilityをhiddenにする */
-    transition: opacity 0.8s ease-in-out, visibility 0s linear 0.8s;
+    transition: opacity 0.5s ease-in-out, visibility 0s linear 0.5s;
 }
 
 [data-transition="fade"] .slide.active {
     opacity: 1;
     /* アクティブ化（フェードイン）時：
        visibilityを即座にvisibleにし、opacityをアニメーションさせる */
-    transition: opacity 0.8s ease-in-out, visibility 0s linear 0s;
+    transition: opacity 0.5s ease-in-out, visibility 0s linear 0s;
 }
 
 /* * トランジション設定（将来用：横スライド）
