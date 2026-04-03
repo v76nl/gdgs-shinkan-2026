@@ -124,6 +124,45 @@
         },
         {
             "id": "slide-3",
+            "backgroundColor": "#f1f8e9",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "プロジェクト紹介 - Chuinfo",
+                    "style": {
+                        "top": "20%",
+                        "left": "10%",
+                        "fontSize": "48px",
+                        "fontWeight": "bold",
+                        "color": "var(--slide-primary)",
+                        "borderBottom": "4px solid var(--slide-primary)",
+                        "paddingBottom": "10px"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "・時間割や課題が確認できるアプリ<br>・iPhone/Androidで使える！",
+                    "style": {
+                        "top": "40%",
+                        "left": "15%",
+                        "fontSize": "32px",
+                        "color": "#333333",
+                        "lineHeight": "2.0"
+                    }
+                },
+                {
+                    "type": "image",
+                    "url": "assets/chuinfo.jpg",
+                    "style": {
+                        "top": "20%",
+                        "left": "65%",
+                        "height": "60%"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "slide-4",
             "backgroundColor": "#fff3e0",
             "elements": [
                 {
@@ -141,7 +180,7 @@
                 },
                 {
                     "type": "text",
-                    "content": "・月1回以上 + 不定期イベント<br>・参加任意<br>・対面orオンライン<bt>",
+                    "content": "・月1回以上 + 不定期イベント<br>・参加任意<br>・対面 or オンライン<bt>",
                     "style": {
                         "top": "40%",
                         "left": "15%",
@@ -153,7 +192,7 @@
             ]
         },
         {
-            "id": "slide-4",
+            "id": "slide-5",
             "backgroundColor": "#fffd96",
             "elements": [
                 {
@@ -183,7 +222,7 @@
             ]
         },
         {
-            "id": "slide-5",
+            "id": "slide-6",
             "elements": [
                 {
                     "type": "text",
@@ -223,7 +262,7 @@
             ]
         },
         {
-            "id": "slide-6",
+            "id": "slide-7",
             "elements": [
                 {
                     "type": "iframe",
