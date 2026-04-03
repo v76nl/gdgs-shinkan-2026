@@ -20,7 +20,7 @@
         },
         {
             "type": "text",
-            "content": "2026",
+            "content": "Google Developer Groups on Campus Chuo University - 2026",
             "style": {
                 "bottom": "20px",
                 "right": "30px",
@@ -61,7 +61,7 @@
                 },
                 {
                     "type": "text",
-                    "content": "#プログラミング #AI #Webアプリ #スマホアプリ",
+                    "content": "#プログラミング #AI #Webアプリ #スマホアプリ #メディアアート<br>#データサイエンス #デザイン",
                     "style": {
                         "top": "85%",
                         "left": "50%",
@@ -110,6 +110,15 @@
                         "color": "#333333",
                         "lineHeight": "2.0"
                     }
+                },
+                {
+                    "type": "image",
+                    "url": "assets/chuinfo.jpg",
+                    "style": {
+                        "top": "20%",
+                        "left": "65%",
+                        "height": "60%"
+                    }
                 }
             ]
         },
@@ -149,7 +158,7 @@
             "elements": [
                 {
                     "type": "text",
-                    "content": "JOIN US!",
+                    "content": "メンバー",
                     "style": {
                         "top": "20%",
                         "left": "10%",
@@ -161,13 +170,14 @@
                     }
                 },
                 {
-                    "type": "image",
-                    "url": "assets/qr_openchat.png",
+                    "type": "text",
+                    "content": "国際情報学部6 : 理工学部2 : 法学部1 <br>男女比 1 : 1<bt>",
                     "style": {
-                        "top": "35%",
-                        "left": "50%",
-                        "transform": "translateX(-50%)",
-                        "width": "300px"
+                        "top": "40%",
+                        "left": "15%",
+                        "fontSize": "32px",
+                        "color": "#333333",
+                        "lineHeight": "2"
                     }
                 }
             ]
@@ -177,7 +187,7 @@
             "elements": [
                 {
                     "type": "text",
-                    "content": "JOIN US (2)!",
+                    "content": "JOIN US!",
                     "style": {
                         "top": "20%",
                         "left": "10%",
@@ -196,6 +206,18 @@
                         "left": "50%",
                         "transform": "translateX(-50%)",
                         "width": "300px"
+                    }
+                },
+                {
+                    "type": "text",
+                    "content": "新歓LINEオープンチャット",
+                    "style": {
+                        "top": "80%",
+                        "left": "50%",
+                        "transform": "translateX(-50%)",
+                        "fontSize": "24px",
+                        "color": "#333333",
+                        "lineHeight": "2"
                     }
                 }
             ]
