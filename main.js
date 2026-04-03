@@ -212,5 +212,41 @@ function setupKeyboardNavigation() {
     });
 }
 
+// コンソール操作用のコマンド定義
+function setupConsoleCommands() {
+    Object.defineProperty(window, 'auto', {
+        get: function() {
+            startTimer();
+            return "▶ 自動再生（オート）モードを有効にしました。";
+        },
+        configurable: true
+    });
+
+    Object.defineProperty(window, 'stop', {
+        get: function() {
+            stopTimer();
+            return "⏸ 手動（ストップ）モードを有効にしました。左右キーで操作してください。";
+        },
+        configurable: true
+    });
+
+    console.log(
+        "%c✨ 新歓サイネージ コントロールパネル ✨",
+        "color: #1565c0; font-size: 16px; font-weight: bold; border-bottom: 2px solid #1565c0; padding-bottom: 5px;"
+    );
+    console.log(
+        "%cここ（コンソール）に以下の文字を入力して Enter キーを押すと動作モードが切り替わります。\n\n" +
+        "▶ %cauto%c ：自動でスライドが切り替わります\n" +
+        "⏸ %cstop%c ：スライドを止めます（左右キーで手動操作できます）",
+        "font-size: 14px; line-height: 1.8; margin-top: 5px;",
+        "font-size: 14px; font-weight: bold; color: #d84315; background: #fbe9e7; padding: 2px 6px; border-radius: 4px;",
+        "font-size: 14px;",
+        "font-size: 14px; font-weight: bold; color: #d84315; background: #fbe9e7; padding: 2px 6px; border-radius: 4px;",
+        "font-size: 14px;"
+    );
+}
+
+setupConsoleCommands();
+
 // 実行
 document.addEventListener("DOMContentLoaded", loadSignageData);
