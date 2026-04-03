@@ -1,7 +1,3 @@
-/**
- * 表示データの設定
- * 外部JSONとして分離可能な構造にしている。
- */
 const signageData = {
     settings: {
         autoPlayInterval: 5000, // スライド切り替え間隔（ミリ秒）
@@ -11,7 +7,7 @@ const signageData = {
     globalElements: [
         {
             type: "text",
-            content: "2026年度 新入生歓迎イベント",
+            content: "GDGoC Chuo",
             style: {
                 top: "20px",
                 left: "30px",
@@ -42,7 +38,7 @@ const signageData = {
             elements: [
                 {
                     type: "text",
-                    content: "プログラミングサークルへようこそ",
+                    content: "GDGoC Chuo",
                     style: {
                         top: "25%",
                         left: "50%",
