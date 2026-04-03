@@ -20,7 +20,7 @@
         },
         {
             "type": "text",
-            "content": "代表: 仮名 太郎 (Taro KAMEI)",
+            "content": "2026",
             "style": {
                 "bottom": "20px",
                 "right": "30px",
@@ -61,7 +61,7 @@
                 },
                 {
                     "type": "image",
-                    "url": "assets/sample.png",
+                    "url": "assets/gdg_logo.png",
                     "style": {
                         "top": "55%",
                         "left": "50%",
@@ -91,7 +91,7 @@
                 },
                 {
                     "type": "text",
-                    "content": "・Webアプリケーション開発<br>・競技プログラミング対策<br>・ハッカソンへの参加",
+                    "content": "・履修相談会<br>・Webサイト制作<br>・スマホアプリ開発<br>・大会出場<br>・ハッカソン開催<bt>",
                     "style": {
                         "top": "40%",
                         "left": "15%",
