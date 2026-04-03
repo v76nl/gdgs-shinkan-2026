@@ -121,15 +121,42 @@
                 },
                 {
                     "type": "text",
-                    "content": "毎週 火・木曜日 17:00〜<br>学生会館 3階 302号室",
+                    "content": "・月1回以上 + 不定期イベント<br>・参加任意<br>・対面orオンライン<bt>",
                     "style": {
-                        "top": "45%",
-                        "left": "50%",
-                        "transform": "translate(-50%, -50%)",
-                        "fontSize": "40px",
+                        "top": "40%",
+                        "left": "15%",
+                        "fontSize": "32px",
                         "color": "#333333",
-                        "textAlign": "center",
-                        "lineHeight": "1.8"
+                        "lineHeight": "2"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "slide-4",
+            "backgroundColor": "#fffd96",
+            "elements": [
+                {
+                    "type": "text",
+                    "content": "JOIN US!",
+                    "style": {
+                        "top": "20%",
+                        "left": "10%",
+                        "fontSize": "48px",
+                        "fontWeight": "bold",
+                        "color": "#e65100",
+                        "borderBottom": "4px solid #e65100",
+                        "paddingBottom": "10px"
+                    }
+                },
+                {
+                    "type": "image",
+                    "url": "assets/qr_openchat.png",
+                    "style": {
+                        "top": "35%",
+                        "left": "50%",
+                        "transform": "translateX(-50%)",
+                        "width": "300px"
                     }
                 }
             ]
