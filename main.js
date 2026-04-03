@@ -46,6 +46,14 @@ function createElementNode(elementData) {
         img.style.height = "100%";
         img.style.objectFit = "contain";
         el.appendChild(img);
+    } else if (elementData.type === "iframe") {
+        const iframe = document.createElement("iframe");
+        iframe.src = elementData.url;
+        iframe.style.width = "100%";
+        iframe.style.height = "100%";
+        iframe.style.border = "none";
+        iframe.setAttribute("allowtransparency", "true");
+        el.appendChild(iframe);
     }
 
     return el;
